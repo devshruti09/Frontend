@@ -81,7 +81,7 @@ body{
     }
 }
 #btn:checked ~  #on{
-    animation: nones;
+    animation: none;
 }
 #btn:checked ~ label span:before{
     content: "Turn On";
