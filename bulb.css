@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+.box{
+    position: relative;
+    height: 500px;
+    width: 450px;
+}
+.box img{
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    margin-top: -50px;
+}
+.box label{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box label span{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    border: 2px solid #fff;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box label span:before{
+    content: "Turn off";
+}
+.box label span:hover{
+    background: #fff;
+    color: black;
+}
+#on{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        opacity: 1;
+    }
+    5%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    74%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    84%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#btn:checked ~  #on{
+    animation: nones;
+}
+#btn:checked ~ label span:before{
+    content: "Turn On";
+}
+
+.box input{
+    display: none;
+}
