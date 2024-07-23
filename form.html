@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Verdana;
+            text-align: center;
+        }
+        form{
+            background-color: burlywood;
+            max-width: 80%;
+            margin: 100px;
+            padding: 50px 40px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form{
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .form label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form input, .form select, textarea{
+            border: 1px solid #777;
+            background: bisque;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 15px;
+            display: block;
+            width: 95%;
+
+        }
+        .form input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            background-color: bisque;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            bottom: 20px;
+        }
+        button:hover{
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="form">
+        <div class="form">
+            <label for="name" id="lname">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <label for="email" id="lemail">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form">
+            <label for="age" id="lage">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form">
+            <label for="role" id="lrole">Which describes you best?</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form">
+            <label>Languages and Frameworks known <small>(check all that apply)</small></label><br>
+            <input type="checkbox" name="inp">C <br>
+            <input type="checkbox" name="inp">C++ <br>
+            <input type="checkbox" name="inp">C# <br>
+            <input type="checkbox" name="inp">Java <br>
+            <input type="checkbox" name="inp">Python <br>
+            <input type="checkbox" name="inp">React <br>
+            <input type="checkbox" name="inp">Angular <br>
+            <input type="checkbox" name="inp">Django <br>
+        </div>
+        <div class="form">
+            <p>Any comments and suggestions</p>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>   
+        </div> 
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
