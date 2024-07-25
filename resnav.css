@@ -91,7 +91,7 @@ a:hover,a.active{
 }
 
 .main .image{
-    background-image: url(sunflower.jpg);
+    background-image: url(image/sunflower.jpg);
     background-size: cover;
     height: 90vh;
     width: 100%;
