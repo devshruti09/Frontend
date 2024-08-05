@@ -8,8 +8,8 @@ html{
 nav{
     position: fixed;
     background-color: crimson;
-    height: 80px;
     width: 100%;
+    z-index: 100;
 }
 nav ul{
     float: right;
@@ -203,7 +203,7 @@ nav button:hover{
 }
 .services .img{
     background-image: url(image/sky.jpg);
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -222,4 +222,12 @@ nav button:hover{
 .services .img h1:hover{
     border-bottom: 2.5px solid crimson;
     transition: all .3s linear;
+}
+.contact .img{
+    background-image: url(image/scenary6.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
